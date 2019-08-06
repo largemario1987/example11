@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class=" responsive" lang="sv">
+<head>
+<title></title>
+<style>
+.newmodal {
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+	position: absolute;
+	max-width: 900px;
+	min-width: 500px;
+	background: radial-gradient(circle at top left, rgba(74, 81, 92, 0.4) 0%, rgba(75, 81, 92, 0) 60%), #25282e;
+}
+body {
+	background: #1b2838;
+	text-align: left;
+	color: #8f98a0;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+body, textarea {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+html.responsive body {
+	min-height: 100%;
+	height: auto;
+	position: relative;
+}
+html {
+	height: 100%;
+}
+html.responsive {
+	height: 100%;
+}
+.modal_top_bar {
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, #00ccff, #3366ff);
+}
+.newmodal_content_border {
+	padding: 0 1px 1px 1px;
+}
+.newmodal_content {
+	overflow: auto;
+	word-wrap: break-word;
+	padding: 32px;
+	font-size: 14px;
+	color: #969696;
+	position: relative;
+}
+.newmodal_header {
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 36px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	text-transform: uppercase;
+	flex-shrink: 0;
+}
+.newmodal_close {
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVBREZBRDlBNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVBREZBRDlCNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUFERkFEOTg3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUFERkFEOTk3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4iulRzAAABPElEQVR42mI8cuQIAyWABUqbAXEylH0fiDtwqI8FYhsoewEQH4cZcBaI64DYG8p/AVWADDyAeD4QMwPxJiA+BRJkgkr+BeJoIL4D5U8DYi0kzepAvAKq+TJU7V9kA0DgIxD7Q2lOIF4NpfmBeAuUfg3EPkD8BaaJCc2Z14A4EcoGuWAC1NkqQPwLqvkRsgYmLAG1HoiboOw0IA6EshNh/iZkAAjUA/FBJP5KIF6GTSEuAwygUQsDflAxogwQAuJ10AAExcpNKHsjEIsSMoAZGl2K0EALBeIIKFsOKSpxGtACxK5Qdi4QX4DiAqiYExB34TIgBIgrkAJtFpLcdKgYCBQBcRRMghGamUBxfhKIeaB+NkFOLFAAkjsDTZXfgdgK5DpYXvBGiqYpWDQzQMVAYZKDlDcuMFKanQECDAAqw0LA+GRiqAAAAABJRU5ErkJggg== );
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	float: right;
+	margin-top: 9px;
+	margin-right: 9px;
+	height: 16px;
+	width: 16px;
+	opacity: 0.7;
+}
+.newmodal_header .title_text {
+	padding: 32px 32px 0px 32px;
+	display: block;
+}
+</style>
+</head>
+<body class=" responsive_page"><div class="newmodal" style="left: 701px; top: 68px; display: none; position: fixed; z-index: 1000; max-width: 400px;"><div class="modal_top_bar"></div><div class="newmodal_header_border"><div class="newmodal_header"><div class="newmodal_close"></div><div class="title_text">Steam Guard Mobilautentisering</div></div></div><div class="newmodal_content_border"><div class="newmodal_content" style="max-height: 473px;"><div></div></div></div></div></body>
+</html>
